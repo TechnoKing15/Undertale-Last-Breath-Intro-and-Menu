@@ -1,0 +1,38 @@
+@font-face {
+    font-family: '8BitOperator';
+    src: url('fonts/8bitoperator.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: '8BitOperator', monospace;
+    color: white;
+}
+
+#image-container {
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#image-container img {
+    width: 740px;
+    height: 580px;
+    object-fit: contain;
+}
+
+#text-container {
+    width: 840px;  /* 640px (image width) + 200px (100px on each side) */
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+    margin-top: -80px;  /* Keep the existing margin-top */
+}
