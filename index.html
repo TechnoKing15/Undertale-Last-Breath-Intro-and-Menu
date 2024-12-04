@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undertale Last Breath Intro</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Undertale: Last Breath</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.1">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="image-container">
-        <img id="current-image" src="resources/intro.image.1.png" alt="Game scene">
+        <img id="current-image" src="resources/intro.image.1.png" alt="Game scene" style="display: none;">
     </div>
     <div id="text-container"></div>
     <audio id="typeSfx" src="resources/undertale.flavor.text.sfx.mp3" preload="auto"></audio>
     <audio id="backgroundMusic" src="resources/The Last Breath.mp3" preload="auto"></audio>
-    <script src="script.js"></script>
+    <audio id="titleAppearSound" src="resources/title.appear.sound.mp3" preload="auto"></audio>
+    <audio id="menuMusic" src="resources/Menu.mp3" preload="auto" loop></audio>
+    <img id="title-image" src="resources/Undertale_Last_Breath_Title.png" alt="Undertale Last Breath Title" style="display: none;">
+    <button id="start-button" style="display: flex;"><span>START</span></button>
+    <button id="credits-button" style="display: flex;"><span>CREDITS</span></button>
+    <button id="settings-button" style="display: flex;"><span>SETTINGS</span></button>
+    <div id="custom-cursor"></div>
+    <div id="start-text">Press Z to begin.</div>
+    <div id="menu-gradient"></div>
+    <div id="floating-circles"></div>
+    <div id="menu" style="display: none;">
+        <div class="menu-container">
+            <div id="menu-text">-SELECT THE PHASE-</div>
+        </div>
+    </div>
+    <script src="script.js?v=1.1"></script>
 </body>
 </html>
